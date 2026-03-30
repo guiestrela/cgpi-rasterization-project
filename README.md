@@ -1,35 +1,34 @@
-# 🎨 Rasterização e Computação Gráfica em Python
+# 🎨 Rasterização de Imagens em Python
 
 ## 📌 Sobre o projeto
-Este projeto implementa conceitos fundamentais de computação gráfica:
+Este projeto implementa conceitos fundamentais de computação gráfica, incluindo:
 
-- Imagens vetoriais (SVG)
-- Imagens matriciais (bitmap)
-- Rasterização de formas geométricas
-- Conversão de coordenadas
-
-## 🚀 Tecnologias
-- Python
-- NumPy
-- Pillow
-- Pycairo
+- Criação de imagens vetoriais (SVG)
+- Rasterização manual (pixel a pixel)
+- Conversão de coordenadas contínuas para discretas
 
 ## 🧠 Conceitos aplicados
+- Rasterização
 - Algoritmo de Bresenham (reta)
 - Algoritmo de círculo
-- Rasterização
-- Sistemas de coordenadas
+- Representação vetorial vs bitmap
 
 ## 🖼 Resultados
 
-### Vetorial (SVG)
+### Vetorial
 ![vetor](outputs/vector.png)
 
-### Círculo Matricial
+### Círculo (Matricial)
 ![circulo](outputs/circle.png)
 
 ### Rasterização Completa
 ![raster](outputs/rasterized.png)
+
+## ⚙️ Tecnologias
+- Python
+- NumPy
+- Pillow
+- Pycairo
 
 ## ▶️ Como executar
 
