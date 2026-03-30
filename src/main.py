@@ -1,5 +1,5 @@
-from vector import cria_imagem_vetorial
-from raster import passo2, passo3
+from src.vector import cria_imagem_vetorial
+from src.raster import passo2, passo3
 
 def main():
     print("Iniciando projeto de computação gráfica...")

@@ -1,37 +1,57 @@
-# 🎨 Rasterização de Imagens em Python
+# Rasterizacao de Imagens em Python
 
-## 📌 Sobre o projeto
-Este projeto implementa conceitos fundamentais de computação gráfica, incluindo:
+## Sobre o projeto
+Este projeto demonstra conceitos fundamentais de computacao grafica por meio de duas abordagens para a mesma cena:
+- geracao vetorial em SVG;
+- rasterizacao manual em imagem matricial.
 
-- Criação de imagens vetoriais (SVG)
-- Rasterização manual (pixel a pixel)
-- Conversão de coordenadas contínuas para discretas
+A cena contem duas retas diagonais e um circulo central.
 
-## 🧠 Conceitos aplicados
-- Rasterização
-- Algoritmo de Bresenham (reta)
-- Algoritmo de círculo
-- Representação vetorial vs bitmap
+## Conceitos aplicados
+- Rasterizacao
+- Algoritmo incremental para reta (estilo Bresenham)
+- Teste de pertinencia para preenchimento de circulo
+- Diferenca entre representacao vetorial e bitmap
 
-## 🖼 Resultados
+## Estrutura
+- `src/main.py`: orquestra a execucao.
+- `src/vector.py`: gera a versao vetorial.
+- `src/raster.py`: cria imagens raster e salva saidas.
+- `src/algorithms.py`: algoritmos de desenho.
+- `outputs/`: arquivos gerados.
+
+## Resultados
 
 ### Vetorial
-![vetor](outputs/vector.png)
+Arquivo gerado: `outputs/vector.svg`
 
-### Círculo (Matricial)
+### Circulo (Matricial)
 ![circulo](outputs/circle.png)
 
-### Rasterização Completa
+### Rasterizacao completa
 ![raster](outputs/rasterized.png)
 
-## ⚙️ Tecnologias
+## Tecnologias
 - Python
 - NumPy
 - Pillow
 - Pycairo
 
-## ▶️ Como executar
+## Como executar
+
+1. (Opcional) criar e ativar ambiente virtual.
+2. Instalar dependencias.
+3. Executar o projeto como modulo.
 
 ```bash
 pip install -r requirements.txt
-python src/main.py
+python -m src.main
+```
+
+Observacao: executar `python src/main.py` pode falhar com erro de import dependendo do `PYTHONPATH`.
+
+## Saidas esperadas
+Ao final da execucao, os seguintes arquivos sao gerados em `outputs/`:
+- `vector.svg`
+- `circle.png`
+- `rasterized.png`
